@@ -1,0 +1,45 @@
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- AngularJS MATERIAL CSS -->
+    <link rel="stylesheet" href="assets/lib/angular-material/angular-material.min.css">
+</head>
+
+<body ng-app="BlankApp" ng-cloak>
+    <!-- CODE HTML -->
+
+    <md-content>
+        <md-toolbar class="md-hue-2">
+            <div class="md-toolbar-tools">
+                <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
+                    <md-icon md-svg-icon=""></md-icon>
+                </md-button>
+
+                <h2 flex md-truncate>Toolbar with Disabled/Enabled Icon Buttons</h2>
+
+                <md-button class="md-icon-button" aria-label="Favorite">
+                    <md-icon md-svg-icon="" class="favorite-icon"></md-icon>
+                </md-button>
+
+                <md-button class="md-icon-button" aria-label="More">
+                    <md-icon md-svg-icon=""></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+    </md-content>
+
+    <!-- AngularJS JS -->
+    <script src="assets/lib/angular/angular.min.js"></script>
+    <script src="assets/lib/angular-animate/angular-animate.min.js"></script>
+    <script src="assets/lib/angular-aria/angular-aria.min.js"></script>
+    <script src="assets/lib/angular-messages/angular-messages.min.js"></script>
+    <script src="assets/lib/angular-material/angular-material.min.js"></script>
+
+    <script type="text/javascript">
+        angular.module('BlankApp', ['ngMaterial', 'ngMessages']);
+    </script>
+
+</body>
+
+</html>
