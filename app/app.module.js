@@ -1,4 +1,4 @@
 angular.module('MiageToulouse', [
     'navbar',
-    'sidenavbar'
+    'footercustom'
 ]);
