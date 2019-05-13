@@ -2,43 +2,78 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- AngularJS MATERIAL CSS -->
-    <link rel="stylesheet" href="assets/lib/angular-material/angular-material.min.css">
+    <!-- CSS + FONT -->
+    <link rel="stylesheet" href="assets/lib/mdl/material.min.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/sidenavbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body ng-app="BlankApp" ng-cloak>
+<body ng-app="MiageToulouse" ng-cloak>
+
     <!-- CODE HTML -->
+    <div class="mdl-layout mdl-js-layout">
 
-    <md-content>
-        <md-toolbar class="md-hue-2">
-            <div class="md-toolbar-tools">
-                <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
-                    <md-icon md-svg-icon=""></md-icon>
-                </md-button>
+        <navbar></navbar>
 
-                <h2 flex md-truncate>Toolbar with Disabled/Enabled Icon Buttons</h2>
+        <div class="mdl-layout__drawer">
+            <sidenavbar></sidenavbar>
+        </div>
 
-                <md-button class="md-icon-button" aria-label="Favorite">
-                    <md-icon md-svg-icon="" class="favorite-icon"></md-icon>
-                </md-button>
+        <main class="mdl-layout__content">
 
-                <md-button class="md-icon-button" aria-label="More">
-                    <md-icon md-svg-icon=""></md-icon>
-                </md-button>
+            <div class="page-content">
+
+                <div class="mdl-grid">
+
+                    <div class="mdl-cell mdl-cell--4-col  mdl-card mdl-shadow--4dp">
+                        <div class="mdl-card__title">
+                            <h3 class="mdl-card__title-text">
+                                <i class="far fa-folder material-icons"></i>La MIAGE
+                            </h3>
+                        </div>
+                        <div
+                            class="mdl-card__actions mdl-card--border dossier-card-background-color-500 mdl-card__actions_right">
+                            <div class="mdl-buttons-align-right">
+                                <p>
+                                    Une formation universitaire d’excellence assurée dans un réseau de 20 MIAGE
+                                    délivrant une licence et un Master MIAGE. <br>
+
+                                    Un pilotage national autour de deux référentiels : l’un « formation » harmonise
+                                    l’ensemble du programme d’enseignement, l’autre « professionnel » - Européen -
+                                    définit les compétences associées aux différents métiers cibles de la MIAGE. <br>
+
+                                    La MIAGE c'est : <br>
+                                    au niveau national : 4000 étudiants, 1300 alternants, 1200 diplômés de Master <br>
+                                    à Toulouse : 200 étudiants, 100 alternants, 60 diplômés de Master
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
             </div>
-        </md-toolbar>
-    </md-content>
 
-    <!-- AngularJS JS -->
+        </main>
+
+    </div>
+
+    <!-- JS -->
     <script src="assets/lib/angular/angular.min.js"></script>
-    <script src="assets/lib/angular-animate/angular-animate.min.js"></script>
-    <script src="assets/lib/angular-aria/angular-aria.min.js"></script>
-    <script src="assets/lib/angular-messages/angular-messages.min.js"></script>
-    <script src="assets/lib/angular-material/angular-material.min.js"></script>
+    <script src="assets/lib/mdl/material.min.js"></script>
 
-    <script type="text/javascript">
-        angular.module('BlankApp', ['ngMaterial', 'ngMessages']);
-    </script>
+    <!-- NAVBAR -->
+    <script src="components/navbar/navbar.module.js"></script>
+    <script src="components/navbar/navbar.component.js"></script>
+
+    <!-- SIDENAVBAR -->
+    <script src="components/sidenavbar/sidenavbar.module.js"></script>
+    <script src="components/sidenavbar/sidenavbar.component.js"></script>
+
+    <script src="app.module.js"></script>
 
 </body>
 
