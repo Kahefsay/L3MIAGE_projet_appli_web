@@ -1,4 +1,6 @@
 angular.module('MiageToulouse', [
+    'ngRoute',
     'navbar',
-    'footercustom'
+    'footercustom',
+    'formation'
 ]);

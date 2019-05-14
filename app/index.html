@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body class="mdl-color--grey-100 mdl-color-text--grey-700" ng-app="MiageToulouse" ng-cloak>
+<body class="mdl-color--grey-100 mdl-color-text--grey-700" ng-app="MiageToulouse" ng-cloak ng-view>
 
     <!-- CODE HTML -->
     <div class="mdl-layout mdl-js-layout">
 
         <navbar></navbar>
-
+  
         <main class="mdl-layout__content">
 
             <div class="page-content">
@@ -162,8 +162,6 @@
 
             </div>
 
-
-
         </main>
 
         <footercustom></footercustom>
@@ -173,16 +171,24 @@
     <!-- JS -->
     <script src="assets/lib/angular/angular.min.js"></script>
     <script src="assets/lib/mdl/material.min.js"></script>
+    <script src="assets/lib/angular-route/angular-route.min.js"></script>
 
-    <!-- NAVBAR -->
-    <script src="components/navbar/navbar.module.js"></script>
-    <script src="components/navbar/navbar.component.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.route.js"></script>
 
     <!-- FOOTER -->
     <script src="components/footercustom/footercustom.module.js"></script>
     <script src="components/footercustom/footercustom.component.js"></script>
 
-    <script src="app.module.js"></script>
+    <!-- FORMATION -->
+    <script src="components/formation/formation.module.js"></script>
+    <script src="components/formation/formation.component.js"></script>
+
+    <!-- NAVBAR -->
+    <script src="components/navbar/navbar.module.js"></script>
+    <script src="components/navbar/navbar.component.js"></script>
+
+
 
 </body>
 
