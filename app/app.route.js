@@ -4,10 +4,13 @@ angular.
     function config($routeProvider) {
       $routeProvider.
         when('/', {
-            templateUrl: 'index.html'
+            template: '<accueil></accueil>'
         }).
         when('/formation', {
             template : '<formation></formation>'
+        }).
+        when('/alternance', {
+            template : '<alternance></alternance>'
         })
     }
   ]);

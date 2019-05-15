@@ -3,6 +3,5 @@ angular.
     component('formation', {
         templateUrl: 'components/formation/formation.template.html',
         controller : function FormationController() {
-            console.log('ici');
         }
     });
