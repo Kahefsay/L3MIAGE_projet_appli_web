@@ -11,6 +11,12 @@ angular.
         }).
         when('/alternance', {
             template : '<alternance></alternance>'
+        }).
+        when('/connexion', {
+            template : '<connexion></connexion>'
+        }).
+        when('/inscription', {
+            template : '<inscription></inscription>'
         })
     }
   ]);

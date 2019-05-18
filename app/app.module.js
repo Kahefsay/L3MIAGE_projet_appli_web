@@ -1,7 +1,11 @@
 angular.module('MiageToulouse', [
     'ngRoute',
+    'ngMessages',
+    'mdl',
     'footercustom',
     'accueil',
     'formation',
-    'alternance'
+    'alternance',
+    'connexion',
+    'inscription'
 ]);

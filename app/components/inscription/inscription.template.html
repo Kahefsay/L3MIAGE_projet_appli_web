@@ -1,0 +1,61 @@
+<div class="container-inscription">
+    <div class="mdl-card mdl-shadow--8dp login">
+        <div class="mdl-card__title">
+            <img class="sidenavbar-img-logo" src="../../assets/img/logo.png">
+            <h2 class="mdl-card__title-text">S'inscrire</h2>
+            <h3 class="mdl-card__title-text">Accéder au portail étudiant</h3>
+        </div>
+        <div class="mdl-card__supporting-text">
+            <form name="inscription" ng-submit="submitForm(inscription.$valid)" novalidate>
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" mdl-upgrade>
+                    <input class="mdl-textfield__input" type="text" name="nom" ng-model="user.nom" maxlength="50" required>
+                    <label class="mdl-textfield__label" for="nom">Nom</label>
+                    <div ng-messages="inscription.nom.$error">
+                        <div ng-messages-include="../../messages.html"></div>
+                    </div>
+                </div>
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" mdl-upgrade>
+                    <input class="mdl-textfield__input" type="text" name="prenom" ng-model="user.prenom" maxlength="50" required>
+                    <label class="mdl-textfield__label" for="prenom">Prénom</label>
+                    <div ng-messages="inscription.prenom.$error">
+                        <div ng-messages-include="../../messages.html"></div>
+                    </div>
+                </div>
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" mdl-upgrade>
+                    <input class="mdl-textfield__input" type="email" name="email" ng-model="user.email" maxlength="255" required>
+                    <label class="mdl-textfield__label" for="email">Adresse électronique</label>
+                    <div ng-messages="inscription.email.$error">
+                        <div ng-messages-include="../../messages.html"></div>
+                    </div>
+                </div>
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" mdl-upgrade>
+                    <input class="mdl-textfield__input" type="text" name="tel" ng-model="user.tel" minlength="10" maxlength="10" required>
+                    <label class="mdl-textfield__label" for="tel">Numéro de téléphone</label>
+                    <div ng-messages="inscription.tel.$error">
+                        <div ng-messages-include="../../messages.html"></div>
+                    </div>
+                </div>
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" mdl-upgrade>
+                    <input class="mdl-textfield__input" type="password" name="password" ng-model="user.password" minlength="10" maxlength="30" required>
+                    <label class="mdl-textfield__label" for="password">Mot de passe</label>
+                    <div ng-messages="inscription.password.$error">
+                        <div ng-messages-include="../../messages.html"></div>
+                    </div>
+                </div>
+
+                <div class="login-button">
+                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect" type="submit" mdl-upgrade>
+                        Valider
+                    </button>
+                    <a href="#!connexion">Déjà un compte ? Se connecter</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
