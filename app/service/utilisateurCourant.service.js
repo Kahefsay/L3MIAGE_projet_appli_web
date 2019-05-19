@@ -1,10 +1,9 @@
 angular.module('utilisateurCourantService', []).
     service('$utilisateurCourant', function () {
         this.getUserName = function () {
-            console.log('ici');
             var token = this.getToken();
             var payload = JSON.parse(atob(token.split('.')[1]));
-            return payload.Nom + " " + payload.prenom;
+            return payload.Nom + " " + payload.Prenom;
         };
 
         this.getToken = function () {

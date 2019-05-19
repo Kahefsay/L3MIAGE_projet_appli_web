@@ -4,8 +4,6 @@ angular.
         templateUrl: 'components/connexion/connexion.template.html',
         controller: function ConnexionController($scope, $http, $location, $utilisateurCourant) {
 
-            console.log($utilisateurCourant.getUserName());
-
             $scope.submitForm = function (isValid) {
 
                 if (isValid) {
