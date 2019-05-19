@@ -1,4 +1,4 @@
-<html lang="fr">
+<html lang="fr" ng-app="MiageToulouse">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body class="mdl-color--grey-100 mdl-color-text--grey-700" ng-app="MiageToulouse" ng-cloak>
+<body class="mdl-color--grey-100 mdl-color-text--grey-700">
 
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
@@ -53,7 +53,6 @@
 
     </div>
 
-
     <!-- LIB JS -->
     <script src="assets/lib/angular/angular.min.js"></script>
     <script src="assets/lib/mdl/material.min.js"></script>
@@ -64,6 +63,9 @@
     <!-- CONFIG ANGULARJS -->
     <script src="app.module.js"></script>
     <script src="app.route.js"></script>
+
+    <!-- SERVICE -->
+    <script src="service/utilisateurCourant.service.js"></script>
 
     <!-- FOOTER -->
     <script src="components/footercustom/footercustom.module.js"></script>

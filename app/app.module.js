@@ -7,5 +7,6 @@ angular.module('MiageToulouse', [
     'formation',
     'alternance',
     'connexion',
-    'inscription'
+    'inscription',
+    'utilisateurCourantService'
 ]);

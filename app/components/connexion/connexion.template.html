@@ -6,26 +6,33 @@
             <h3 class="mdl-card__title-text">Accéder au portail étudiant</h3>
         </div>
         <div class="mdl-card__supporting-text">
-            <form>
+            <form name="connexion" ng-submit="submitForm(connexion.$valid)" novalidate>
+
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" mdl-upgrade>
-                    <input class="mdl-textfield__input" type="email" name="login-username">
-                    <label class="mdl-textfield__label" for="login-username">Adresse électronique</label>
+                    <input class="mdl-textfield__input" type="email" name="email" ng-model="user.email" maxlength="255" required>
+                    <label class="mdl-textfield__label" for="email">Adresse électronique</label>
+                    <div ng-messages="connexion.email.$error">
+                        <div ng-messages-include="../../messages.html"></div>
+                    </div>
                 </div>
-                <!-- <div class="alert-danger">Nom d'utilisateur obligatoire.</div> -->
+
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" mdl-upgrade>
-                    <input class="mdl-textfield__input" type="password" name="login-password">
-                    <label class="mdl-textfield__label"
-                        for="login-password">Mot de passe</label>
+                    <input class="mdl-textfield__input" type="password" name="password" ng-model="user.password" minlength="10" maxlength="30"
+                        required>
+                    <label class="mdl-textfield__label" for="password">Mot de passe</label>
+                    <div ng-messages="connexion.password.$error">
+                        <div ng-messages-include="../../messages.html"></div>
+                    </div>
                 </div>
-                <!-- 
-                <div *ngIf="loginForm.controls['password'].hasError('required') && loginForm.controls['password'].touched" class="alert-danger">Mot de passe obligatoire.</div>
-                <div *ngIf="invalidCredentials" class="alert-danger">{{errorMessage}}</div> -->
+
                 <div class="login-button">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect" type="submit">
+                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect" type="submit" mdl-upgrade>
                         Connexion
                     </button>
                     <a href="#!inscription">Pas de compte ? S'inscrire</a>
+                    <p class="mdl-color-text--red-A700" style="margin: 10 0 0 0;">{{erreur}}</p>
                 </div>
+
             </form>
         </div>
     </div>

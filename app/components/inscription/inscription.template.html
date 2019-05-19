@@ -6,7 +6,7 @@
             <h3 class="mdl-card__title-text">Accéder au portail étudiant</h3>
         </div>
         <div class="mdl-card__supporting-text">
-            <form name="inscription" ng-submit="submitForm(inscription.$valid)" novalidate>
+            <form name="inscription" ng-submit="submitForm(inscription.$valid)" novalidate ng-show="!creation">
 
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" mdl-upgrade>
                     <input class="mdl-textfield__input" type="text" name="nom" ng-model="user.nom" maxlength="50" required>
@@ -53,9 +53,14 @@
                         Valider
                     </button>
                     <a href="#!connexion">Déjà un compte ? Se connecter</a>
+                    <p class="mdl-color-text--red-A700" style="margin: 10 0 0 0;">{{erreur}}</p>
                 </div>
             </form>
 
+            <div ng-show="creation">
+                <p class="mdl-color-text--green-A700">Création du compte réussi</p>
+                <a style="text-decoration: none; "href="#!connexion">Se connecter</a>
+            </div>
         </div>
     </div>
 </div>
