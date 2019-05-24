@@ -2,7 +2,11 @@ angular.
     module('connexion').
     component('connexion', {
         templateUrl: 'components/connexion/connexion.template.html',
-        controller: function ConnexionController($scope, $http, $location, $utilisateurCourant) {
+        controller: function ConnexionController($scope, $http, $location, $window) {
+
+            if (localStorage.getItem('currentUser') != null) {
+                $location.path('/accueil');
+            }
 
             $scope.submitForm = function (isValid) {
 
@@ -15,7 +19,7 @@ angular.
                     })
                         .then(function (response) {
                             localStorage.setItem('currentUser', JSON.stringify(response.data.token));
-                            $location.path("/");
+                            $window.location.reload();
                         }).
                         catch(function (fallback) {
                             $scope.erreur = "Identifiant invalide";

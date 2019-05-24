@@ -3,12 +3,11 @@ var mycrypto2 = require('crypto');
 var jwt = require('jsonwebtoken');
 var models = require('../models/config.js');
 
-var generateJwt = function (nom, prenom) {
+var generateJwt = function (email) {
     var expiry = new Date();
     expiry.setDate(expiry.getDate() + 7);
     return jwt.sign({
-        Nom: nom,
-        Prenom: prenom,
+        AdresseElectronique: email,
         exp: (expiry.getTime() / 1000),
     }, 'secret');
 };
@@ -21,6 +20,7 @@ module.exports.register = function (req, res) {
     models.Utilisateur.create({
         Nom: req.body.nom,
         Prenom: req.body.prenom,
+        Adresse: req.body.adresse,
         AdresseElectronique: req.body.email,
         Telephone: req.body.tel,
         Salt: salt,
@@ -30,7 +30,7 @@ module.exports.register = function (req, res) {
         res.status(200).send();
     }).catch(error => {
         console.log('Erreur à la création : ' + error);
-        res.status(404).send();
+        res.status(401).send();
     })
 };
 
@@ -46,13 +46,22 @@ module.exports.login = function (req, res) {
             user.PasswordHash = '';
             user.Salt = '';
 
-            token = generateJwt(user.Nom, user.Prenom);
+            token = generateJwt(user.AdresseElectronique);
 
-            res.status(200);
-            res.json({
-                user: user,
-                token: token
+            models.Utilisateur.update(
+                { JWT: token },
+                { where: { AdresseElectronique: user.AdresseElectronique } }
+            ).then(result => {
+                res.status(200);
+                res.json({
+                    user: user,
+                    token: token
+                });
+            }).catch(error => {
+                console.log(error);
+                res.status(200).send({message: error});
             });
+
         } else {
             res.status(401).send();
         }

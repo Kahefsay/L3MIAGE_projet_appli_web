@@ -1,0 +1,39 @@
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Administration des utilisateurs</h2>
+        </div>
+        <div class="mdl-card__table">
+            <table class="mdl-data-table mdl-js-data-table">
+                <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">NOM</th>
+                        <th class="mdl-data-table__cell--non-numeric">PRENOM</th>
+                        <th class="mdl-data-table__cell--non-numeric">ADRESSE ELECTRONIQUE</th>
+                        <th class="mdl-data-table__cell--non-numeric">TELEPHONE</th>
+                        <th class="mdl-data-table__cell--non-numeric">PROFIL MIAGISTE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="user in users">
+                        <td class="mdl-data-table__cell--non-numeric">{{user.Nom}}</td>
+                        <td class="mdl-data-table__cell--non-numeric">{{user.Prenom}}</td>
+                        <td class="mdl-data-table__cell--non-numeric">{{user.AdresseElectronique}}</td>
+                        <td class="mdl-data-table__cell--non-numeric">{{user.Telephone}}</td>
+                        <td class="mdl-data-table__cell--non-numeric">
+                            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="{{user.UtilisateurID}}" mdl-upgrade>
+                                <input type="checkbox" id="{{user.UtilisateurID}}" name="{{user.UtilisateurID}}" ng-model="user.Role" ng-true-value="'MIAGISTE'"
+                                    ng-false-value="'PROSPECT'" class="mdl-switch__input" ng-checked="user.Role=='MIAGISTE'"
+                                    ng-change="updateRole(user)">
+                                <span class="mdl-switch__label"></span>
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="padding: 16px;" class="mdl-card__actions mdl-card--border">
+            Nombre d'utilisateurs enregistrés : {{users.length}}
+        </div>
+    </div>
+</div>

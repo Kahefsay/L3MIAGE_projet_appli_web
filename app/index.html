@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/sidenavbar.css">
     <link rel="stylesheet" href="assets/css/inscription-login.css">
+    <link rel="stylesheet" href="assets/css/table.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
@@ -23,11 +24,27 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="#!/">LA MIAGE</a>
+                    <a class="mdl-navigation__link" href="#!accueil">LA MIAGE</a>
                     <a class="mdl-navigation__link" href="#!formation">FORMATION</a>
                     <a class="mdl-navigation__link" href="#!alternance">ALTERNANCE</a>
-                    <a class="mdl-navigation__link" href="#!connexion">SE CONNECTER</a>
+
+                    <a ng-if="!estConnecte" class="mdl-navigation__link" href="#!connexion">SE CONNECTER</a>
+
+                    <button id="user-plus" class="mdl-button mdl-js-button" ng-if="estConnecte" mdl-upgrade>
+                        <i class="material-icons">face</i>
+                        <span>{{user.Prenom + " " + user.Nom }}</span>
+                    </button>
+
+                    <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect popover" for="user-plus" ng-if="estConnecte" mdl-upgrade>
+                        <li class="mdl-menu__item">
+                            <a style="text-decoration: none; color: black;" href="#!administration">Administration</a>
+                        </li>
+                        <li class="mdl-menu__item" ng-click="deconnexion()">
+                            Déconnexion
+                        </li>
+                    </ul>
                 </nav>
+
             </div>
         </header>
 
@@ -66,6 +83,7 @@
 
     <!-- SERVICE -->
     <script src="service/utilisateurCourant.service.js"></script>
+    <script src="service/utilisateur.service.js"></script>
 
     <!-- FOOTER -->
     <script src="components/footercustom/footercustom.module.js"></script>
@@ -90,6 +108,11 @@
     <!-- INSCRIPTION -->
     <script src="components/inscription/inscription.module.js"></script>
     <script src="components/inscription/inscription.component.js"></script>
+
+    <!-- ADMINISTRATION -->
+    <script src="components/administration/administration.module.js"></script>
+    <script src="components/administration/administration.component.js"></script>
+
 
 </body>
 

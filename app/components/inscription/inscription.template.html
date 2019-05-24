@@ -16,10 +16,18 @@
                     </div>
                 </div>
 
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" mdl-upgrade>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="margin-bottom: 10px;" mdl-upgrade>
                     <input class="mdl-textfield__input" type="text" name="prenom" ng-model="user.prenom" maxlength="50" required>
                     <label class="mdl-textfield__label" for="prenom">Prénom</label>
                     <div ng-messages="inscription.prenom.$error">
+                        <div ng-messages-include="../../messages.html"></div>
+                    </div>
+                </div>
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" mdl-upgrade>
+                    <input class="mdl-textfield__input" type="text" name="adresse" ng-model="user.adresse" maxlength="255" required>
+                    <label class="mdl-textfield__label" for="adresse">Adresse</label>
+                    <div ng-messages="inscription.adresse.$error">
                         <div ng-messages-include="../../messages.html"></div>
                     </div>
                 </div>
@@ -41,7 +49,8 @@
                 </div>
 
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" mdl-upgrade>
-                    <input class="mdl-textfield__input" type="password" name="password" ng-model="user.password" minlength="10" maxlength="30" required>
+                    <input class="mdl-textfield__input" type="password" name="password" ng-model="user.password" minlength="10" maxlength="30"
+                        required>
                     <label class="mdl-textfield__label" for="password">Mot de passe</label>
                     <div ng-messages="inscription.password.$error">
                         <div ng-messages-include="../../messages.html"></div>
@@ -59,7 +68,7 @@
 
             <div ng-show="creation">
                 <p class="mdl-color-text--green-A700">Création du compte réussi</p>
-                <a style="text-decoration: none; "href="#!connexion">Se connecter</a>
+                <a style="text-decoration: none; " href="#!connexion">Se connecter</a>
             </div>
         </div>
     </div>

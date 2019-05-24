@@ -1,22 +1,33 @@
 angular.module('utilisateurCourantService', []).
     service('$utilisateurCourant', function () {
-        this.getUserName = function () {
-            var token = this.getToken();
-            var payload = JSON.parse(atob(token.split('.')[1]));
-            return payload.Nom + " " + payload.Prenom;
-        };
 
-        this.getToken = function () {
-            return localStorage.getItem('currentUser');
-        };
+        this.estConnecte = function ($http) {
+            var token = localStorage.getItem('currentUser');
 
-        this.estConnecte = function () {
-            var token = this.getToken();
-            if (token) {
+            if (token != null) {
                 var payload = JSON.parse(atob(token.split('.')[1]));
-                return payload.exp > Date.now() / 1000;
             } else {
-                return false;
+                var payload = "";
             }
+
+            return $http.get('http://localhost:3000/api/user/get/userByAdresseElectronique/' + payload.AdresseElectronique)
+                .then(function (response) {
+                    if (response.data[0] != null) {
+                        if (response.data[0].JWT = localStorage.getItem('currentUser')) {
+                            return response.data[0];
+                        }
+                    } else {
+                        return null;
+                    }
+
+                }).
+                catch(function (fallback) {
+                    console.log(fallback);
+                    return fallback;
+                });
         };
-    })
+
+        this.deconnexion = function() {
+            localStorage.removeItem('currentUser');
+        }
+    });

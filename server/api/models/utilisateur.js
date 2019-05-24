@@ -12,6 +12,9 @@ module.exports = function(sequelize, Sequelize) {
         Prenom: {
             type: Sequelize.STRING(50)
         },
+        Adresse: {
+            type: Sequelize.STRING(255)
+        },
         AdresseElectronique: {
             type: Sequelize.STRING(255)
         },
@@ -25,9 +28,12 @@ module.exports = function(sequelize, Sequelize) {
             type: Sequelize.STRING(64)
         },
         Role: {
-            type: Sequelize.ENUM('NON-MIAGISTE', 'MIAGISTE','COLLABORATEUR'),
-            defaultValue: 'NON-MIAGISTE',
+            type: Sequelize.ENUM('PROSPECT', 'MIAGISTE','COLLABORATEUR'),
+            defaultValue: 'PROSPECT',
         },
+        JWT: {
+            type: Sequelize.STRING(512)
+        }
     }, {  
         classMethods: {  
           associate: function(models) {

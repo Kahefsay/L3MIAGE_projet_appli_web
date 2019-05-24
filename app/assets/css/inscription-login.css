@@ -3,7 +3,7 @@
     flex-direction: column; 
     align-items:center;    
     text-align: center;
-    padding-top: 5%;
+    padding-top: 50px;
 }
 
 .container-inscription {
@@ -11,6 +11,7 @@
     flex-direction: column; 
     align-items:center;    
     text-align: center;
+    padding-top: 50px;
 }
 
 .login {

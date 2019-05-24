@@ -49,3 +49,15 @@
     font-weight: 400;
     margin-right: 80px;
 }
+
+#user-plus {
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+#user-plus i {
+    margin-right: 5px;
+}
