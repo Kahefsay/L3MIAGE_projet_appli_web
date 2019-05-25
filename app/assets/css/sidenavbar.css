@@ -1,5 +1,5 @@
 .mdl-layout__drawer {
-    background: #424242;
+    background: #2196F3;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     width: 280px;
     -webkit-transform: translateX(-290px);
@@ -23,84 +23,18 @@
 .sidenavbar-img-logo {
     height: 65px;
     margin: 20px 25px 20px 25px;
-    width: 225px;
-}
-
-
-.mdl-checkbox__label.isenabled{
-    font-weight: 500;
-    color: #424242;
+    width: 150px;
 }
 
 .mdl-layout__drawer .mdl-navigation {
     padding-top: 0px;
 }
 
-.mdlext-accordion__tab {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.mdlext-accordion--vertical .mdlext-accordion__panel {
-    min-height: 50px;
-}
-
-.mdlext-accordion--vertical .mdlext-accordion__tab {
-    height: 50px;
-}
-
-.mdlext-accordion__tab {
-    color: #FAFAFA;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    min-height: 40px;
-    outline: none;
-}
-
-.mdlext-accordion__tab i {
-    position: absolute;
-    right: 20px;
-}
-
-.mdlext-accordion__tab:hover {
-    cursor: pointer;
-}
-
-.mdlext-accordion--vertical .mdlext-accordion__tab {
-    padding: 0px 10px 0px 35px;
-}
-
-.mdlext-accordion__tab span {
-    margin-left: 10px;
-}
-
-.mdlext-accordion__tab i {
-    font-size: 20px;
-}
-
-.mdlext-accordion__tabpanel {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-}
-
-.mdlext-accordion--vertical .mdlext-accordion__tabpanel {
-    border-top: none;
-}
-
-.mdl-navigation__link {
-    color: #FAFAFA;
+.mdl-navigation__link {    
     font-size: 16px;
     padding: 5px 10px 5px 40px;
 }
 
-.mdlext-accordion__tab button:hover {
-    background-color: rgba(158, 158, 158, 0.5);
-}
-
-.mdl-button.mdl-js-button.mdl-button--icon.button-list {
-    position: absolute;
-    right: 50px;
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    color: #FAFAFA;
 }

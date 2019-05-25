@@ -53,12 +53,17 @@
         </header>
 
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Title</span>
+            <span class="mdl-layout-title">
+                <img class="sidenavbar-img-logo" src="assets/img/logo.png">
+            </span>
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">LA MIAGE</a>
-                <a class="mdl-navigation__link" href="">FORMATION</a>
-                <a class="mdl-navigation__link" href="">ALTERNANCE</a>
-                <a class="mdl-navigation__link" href="">SE CONNECTER</a>
+                <a class="mdl-navigation__link" href="#!accueil">LA MIAGE</a>
+                <a class="mdl-navigation__link" href="#!formation">FORMATION</a>
+                <a class="mdl-navigation__link" href="#!alternance/information">ALTERNANCE</a>
+                <a ng-if="!estConnecte" class="mdl-navigation__link" href="#!connexion">SE CONNECTER</a>
+                <a ng-if="estConnecte" class="mdl-navigation__link" href="#!administration/utilisateurs">ADMINISTRATION</a>
+                <a ng-if="estConnecte" class="mdl-navigation__link" href="#!question">QUESTION</a>
+                <a ng-if="estConnecte" class="mdl-navigation__link" ng-click="deconnexion($location)">DECONNEXION</a>
             </nav>
         </div>
 
