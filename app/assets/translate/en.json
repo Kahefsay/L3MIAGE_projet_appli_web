@@ -1,0 +1,29 @@
+{
+    "NAVIGATION": {
+        "LAMIAGE": "THE MBI",
+        "FORMATION": "FORMATION",
+        "ALTERNANCE": "APPRENTICHESHIP",
+        "SECONNECTER": "LOGIN",
+        "ADMINISTRATION": "Administration",
+        "QUESTION": "Question",
+        "DECONNEXION": "Disconnect"
+    },
+    "ACCUEIL": {
+        "BLOC1": {
+            "TITRE": "The MBI",
+            "PART1": "A university education of excellence provided in a network of 20 MBIs delivering a licence and a Master MBI.<br><br>",
+            "PART2": "A national steering around two reference frameworks: <br><br> One \"training\" harmonizes the entire teaching programme, <br> The other \"professional\" - European - defines the skills associated with the different target professions of MIAGE.<br><br>",
+            "PART3": "MBI is : <ul class=\"mdl-list\"><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>At the national level: 4000 students, 1300 alternates, 1200 Master's graduates</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>In Toulouse: 200 students, 100 alternates, 60 Master's graduates</span></li></ul>"
+        },
+        "BLOC2": {
+            "TITRE": "A wide range of sectors of activity and companies",
+            "PART1": "All types of companies (large groups, SMEs, VSEs, public services and local authorities, associations) in all professional sectors are concerned by the activities targeted by graduates:<br><ul class=\"mdl-list\"><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Digital service companies</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Goods- and service-producing industries</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Banks and insurance companies</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Distribution, transport and tourism companies...</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Health and human assistance organizations</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Government, regional, local, government ministries and agencies...</span></li></ul>",
+            "PART2": "The professions in the digital sector are currently facing a recruitment deficit at regional, national and European level."
+        },
+        "BLOC3": {
+            "TITRE": "Professional integration",
+            "PART1": "The hiring salaries of Master graduates are over €30k for more than 90% of them. Integration rates are close to 100% within 3 months after graduation. <br><br>",
+            "PART2": "Since 2009 :<br><ul class=\"mdl-list\"><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>2 to 3 graduates per year start up companies</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>6 graduates entered the doctoral school during this period</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>The very short integration periods are directly linked to the activity in the Occitan Region, which remains the preferred place for our graduates to integrate.</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>New trends have emerged: first experience abroad (VIE...), year of break of discovery abroad (Canada, Australia, New Zealand)</span></li></ul>"
+        }
+    }
+}

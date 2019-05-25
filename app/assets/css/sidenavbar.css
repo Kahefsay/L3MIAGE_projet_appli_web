@@ -38,3 +38,7 @@
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
     color: #FAFAFA;
 }
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+    background-color: #1565c0;
+}

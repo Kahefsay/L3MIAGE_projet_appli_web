@@ -1,0 +1,29 @@
+{
+    "NAVIGATION": {
+        "LAMIAGE": "LA MIAGE",
+        "FORMATION": "FORMATION",
+        "ALTERNANCE": "ALTERNANCE",
+        "SECONNECTER": "SE CONNECTER",
+        "ADMINISTRATION": "Administration",
+        "QUESTION": "Question",
+        "DECONNEXION": "Déconnexion"
+    },
+    "ACCUEIL": {
+        "BLOC1": {
+            "TITRE": "La MIAGE",
+            "PART1": "Une formation universitaire d’excellence assurée dans un réseau de 20 MIAGE délivrant une licence et un Master MIAGE. <br><br>",
+            "PART2": "Un pilotage national autour de deux référentiels : <br><br> L’un « formation » harmonise l’ensemble du programme d’enseignement, <br> L’autre « professionnel » - Européen - définit les compétences associées aux différents métiers cibles de la MIAGE. <br><br>",
+            "PART3": " La MIAGE c'est : <ul class=\"mdl-list\"><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Au niveau national : 4000 étudiants, 1300 alternants, 1200 diplômés de Master</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>À Toulouse : 200 étudiants, 100 alternants, 60 diplômés de Master</span></li></ul>"
+        },
+        "BLOC2": {
+            "TITRE": "Un large spectre de secteurs d'activités et d'entreprises",
+            "PART1": "Tous les types d’entreprises (grands groupes, PME, TPE, fonctions publiques et collectivités territoriales, associations)de tous les secteurs professionnels sont concernés par les activités visées par les diplômés :<br><ul class=\"mdl-list\"><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Les entreprises de services numériques</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Les industries de production de biens et de services</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Les banques et les sociétés d’assurance</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Les entreprises de distribution, de transport, de tourisme ...</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Les organismes de santé et d’aide à la personne</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Les ministères et les agences gouvernementales, régionales, locales …</span></li></ul>",
+            "PART2": "Les métiers du secteur du numérique sont aujourd’hui en déficit de recrutement que ce soit au niveau régional, national ou européen."
+        },
+        "BLOC3": {
+            "TITRE": "Insertion professionnelle",
+            "PART1": "Les salaires d’embauche des diplômés de Master, sont supérieurs à 30k€ pour plus de 90% d’entre eux. Les taux d’insertion sont proches des 100% dans un délai de 3 mois après l’obtention du diplôme.<br><br>",
+            "PART2": "Depuis 2009 :<br><ul class=\"mdl-list\"><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>2 à 3 diplômés par an se lancent dans la création d’entreprises</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>6 diplômés ont intégré l’école doctorale durant cette période</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Les délais d’insertion très courts sont directement liés à l’activité en Région Occitanie qui reste le lieu d’insertion privilégiéde nos diplômés</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>De nouvelles tendances sont apparues : première expérience à l’étranger (VIE...), année de césure de découverte à l‘étranger(Canada, Australie, Nouvelle-Zélande)</span></li></ul>"
+        }
+    }
+}

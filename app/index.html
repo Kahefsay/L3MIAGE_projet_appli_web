@@ -22,14 +22,16 @@
             <div class="mdl-layout__header-row">
                 <!-- Titre -->
                 <span class="mdl-layout-title">Toulouse MIAGE</span>
+                <button style="margin-left: 20px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" ng-show="lang === 'fr'" ng-click="changeLanguage('en')">Anglais</button>
+                <button style="margin-left: 20px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" ng-show="lang === 'en'" ng-click="changeLanguage('fr')">Français</button>
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="#!accueil">LA MIAGE</a>
-                    <a class="mdl-navigation__link" href="#!formation">FORMATION</a>
-                    <a class="mdl-navigation__link" href="#!alternance/information">ALTERNANCE</a>
+                    <a class="mdl-navigation__link" href="#!accueil">{{'NAVIGATION.LAMIAGE' | translate}}</a>
+                    <a class="mdl-navigation__link" href="#!formation">{{'NAVIGATION.FORMATION' | translate}}</a>
+                    <a class="mdl-navigation__link" href="#!alternance/information">{{'NAVIGATION.ALTERNANCE' | translate}}</a>
 
-                    <a ng-if="!estConnecte" class="mdl-navigation__link" href="#!connexion">SE CONNECTER</a>
+                    <a ng-if="!estConnecte" class="mdl-navigation__link" href="#!connexion">{{'NAVIGATION.SECONNECTER' | translate}}</a>
 
                     <button id="user-plus" class="mdl-button mdl-js-button" ng-if="estConnecte" mdl-upgrade>
                         <i class="material-icons">face</i>
@@ -38,13 +40,13 @@
 
                     <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect popover" for="user-plus" ng-if="estConnecte" mdl-upgrade>
                         <li class="mdl-menu__item">
-                            <a style="text-decoration: none; color: black;" href="#!administration/utilisateurs">Administration</a>
+                            <a style="text-decoration: none; color: black;" href="#!administration/utilisateurs">{{'NAVIGATION.ADMINISTRATION' | translate}}</a>
                         </li>
                         <li class="mdl-menu__item">
-                            <a style="text-decoration: none; color: black;" href="#!question">Question</a>
+                            <a style="text-decoration: none; color: black;" href="#!question">{{'NAVIGATION.QUESTION' | translate}}</a>
                         </li>
                         <li class="mdl-menu__item" ng-click="deconnexion($location)">
-                            Déconnexion
+                            {{'NAVIGATION.DECONNEXION' | translate}}
                         </li>
                     </ul>
                 </nav>
@@ -57,13 +59,13 @@
                 <img class="sidenavbar-img-logo" src="assets/img/logo.png">
             </span>
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="#!accueil">LA MIAGE</a>
-                <a class="mdl-navigation__link" href="#!formation">FORMATION</a>
-                <a class="mdl-navigation__link" href="#!alternance/information">ALTERNANCE</a>
-                <a ng-if="!estConnecte" class="mdl-navigation__link" href="#!connexion">SE CONNECTER</a>
-                <a ng-if="estConnecte" class="mdl-navigation__link" href="#!administration/utilisateurs">ADMINISTRATION</a>
-                <a ng-if="estConnecte" class="mdl-navigation__link" href="#!question">QUESTION</a>
-                <a ng-if="estConnecte" class="mdl-navigation__link" ng-click="deconnexion($location)">DECONNEXION</a>
+                <a class="mdl-navigation__link" href="#!accueil">{{'NAVIGATION.LAMIAGE' | translate}}</a>
+                <a class="mdl-navigation__link" href="#!formation">{{'NAVIGATION.FORMATION' | translate}}</a>
+                <a class="mdl-navigation__link" href="#!alternance/information">{{'NAVIGATION.ALTERNANCE' | translate}}</a>
+                <a ng-if="!estConnecte" class="mdl-navigation__link" href="#!connexion">{{'NAVIGATION.SECONNECTER' | translate}}</a>
+                <a ng-if="estConnecte" class="mdl-navigation__link" href="#!administration/utilisateurs">{{'NAVIGATION.ADMINISTRATION' | translate | uppercase}}</a>
+                <a ng-if="estConnecte" class="mdl-navigation__link" href="#!question">{{'NAVIGATION.QUESTION' | translate | uppercase}}</a>
+                <a ng-if="estConnecte" style="cursor: pointer;" class="mdl-navigation__link" ng-click="deconnexion($location)">{{'NAVIGATION.DECONNEXION' | translate | uppercase}}</a>
             </nav>
         </div>
 
@@ -86,6 +88,8 @@
     <script src="assets/lib/angular-route/angular-route.min.js"></script>
     <script src="assets/lib/angular-messages/angular-messages.min.js"></script>
     <script src="assets/lib/angular-material-design-lite/dist/angular-material-design-lite.min.js"></script>
+    <script src="assets/lib/angular-translate/dist/angular-translate.min.js"></script>
+    <script src="assets/lib/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
 
     <!-- CONFIG ANGULARJS -->
     <script src="app.module.js"></script>
