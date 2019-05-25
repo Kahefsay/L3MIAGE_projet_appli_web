@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/sidenavbar.css">
     <link rel="stylesheet" href="assets/css/inscription-login.css">
     <link rel="stylesheet" href="assets/css/table.css">
+    <link rel="stylesheet" href="assets/css/tab.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
@@ -26,7 +27,7 @@
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     <a class="mdl-navigation__link" href="#!accueil">LA MIAGE</a>
                     <a class="mdl-navigation__link" href="#!formation">FORMATION</a>
-                    <a class="mdl-navigation__link" href="#!alternance">ALTERNANCE</a>
+                    <a class="mdl-navigation__link" href="#!alternance/information">ALTERNANCE</a>
 
                     <a ng-if="!estConnecte" class="mdl-navigation__link" href="#!connexion">SE CONNECTER</a>
 
@@ -39,7 +40,7 @@
                         <li class="mdl-menu__item">
                             <a style="text-decoration: none; color: black;" href="#!administration">Administration</a>
                         </li>
-                        <li class="mdl-menu__item" ng-click="deconnexion()">
+                        <li class="mdl-menu__item" ng-click="deconnexion($location)">
                             Déconnexion
                         </li>
                     </ul>
@@ -61,6 +62,7 @@
         <main class="mdl-layout__content">
 
             <div class="page-content">
+                {{message}}
                 <div ng-view></div>
             </div>
 
@@ -112,7 +114,6 @@
     <!-- ADMINISTRATION -->
     <script src="components/administration/administration.module.js"></script>
     <script src="components/administration/administration.component.js"></script>
-
 
 </body>
 

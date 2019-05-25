@@ -9,7 +9,7 @@ angular.
                 when('/formation', {
                     template: '<formation></formation>'
                 }).
-                when('/alternance', {
+                when('/alternance/information', {
                     template: '<alternance></alternance>'
                 }).
                 when('/connexion', {
@@ -19,8 +19,17 @@ angular.
                     template: '<inscription></inscription>'
                 }).
                 when('/administration', {
-                    template: '<administration></administration>'
+                    template: '<administration></administration>',
+                    resolve: {
+                        currentAuth: function ($utilisateurCourant, $q) {
+                            if ($utilisateurCourant.getUser().Role != 'COLLABORATEUR') {
+                                return $q.reject('DROIT_REQUIRED');
+                            }
+                        }
+                    }
                 }).
-                otherwise({ redirectTo: '/accueil' });
+                otherwise({
+                    redirectTo: '/accueil'
+                });
         }
     ]);

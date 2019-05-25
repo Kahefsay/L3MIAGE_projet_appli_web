@@ -1,0 +1,9 @@
+.mdl-tabs__tab-bar {
+    background-color:#E3F2FD;
+    justify-content: flex-start;
+}
+
+.mdl-tabs__tab.is-active {
+    border-bottom: 2px solid #3f51b5;
+    color: rgba(0,0,0,.87);
+}
