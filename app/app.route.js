@@ -28,6 +28,18 @@ angular.
                         }
                     }
                 }).
+                when('/alternance/offre', {
+                    template: '<offre></offre>',
+                    resolve: {
+                        currentAuth: function ($utilisateurCourant, $q) {
+                            if ($utilisateurCourant.getUser() == null) {
+                                return $q.reject('AUTH_REQUIRED');
+                            } else if ($utilisateurCourant.getUser().Role == 'PROSPECT') {
+                                return $q.reject('DROIT_REQUIRED');
+                            }
+                        }
+                    }
+                }).
                 otherwise({
                     redirectTo: '/accueil'
                 });

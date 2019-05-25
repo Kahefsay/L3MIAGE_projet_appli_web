@@ -9,6 +9,7 @@ var app = angular.module('MiageToulouse', [
     'connexion',
     'inscription',
     'administration',
+    'offre',
     'utilisateurCourantService',
     'utilisateurService'
 ]);
