@@ -6,37 +6,36 @@
 </div>
 
 <div class="mdl-grid">
-    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
-        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-            <h4 class="mdl-cell mdl-cell--12-col">L'alternance à la MIAGE de Toulouse</h4>
-            <div class="section__text mdl-cell mdl-cell--12-col">
-                Trois possibilités sont offertes :
-                <ul class="mdl-list">
-                    <li class="mdl-list__item">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-list__item-icon">chevron_right</i>
-                            Soit en L3 pour une durée d’un an
-                        </span>
-                    </li>
-                    <li class="mdl-list__item">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-list__item-icon">chevron_right</i>
-                            Soit en 1ère année de Master, pour une durée de deux ans
-                        </span>
-                    </li>
-                    <li class="mdl-list__item">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-list__item-icon">chevron_right</i>
-                            soit en 2ème année de Master pour une durée d'un an
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--12-col">
-                Dans le cadre de l’alternance, le cursus de Master faisant suite à une année de licence est le plus complet, puisque les
-                diplômés peuvent faire valoir une expérience professionnelle de trois ans. En fin de parcours, le contrat
-                d’alternance joue le rôle d’une période d’essai et facilite l’entrée des jeunes diplômés dans la vie active.
-            </div>
+    <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Liste des offres de stage/alternance</h2>
+        </div>
+        <div class="mdl-card__table">
+            <table class="mdl-data-table mdl-js-data-table">
+                <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Sujet</th>
+                        <th class="mdl-data-table__cell--non-numeric">Societe</th>
+                        <th class="mdl-data-table__cell--non-numeric">Type</th>
+                        <th class="mdl-data-table__cell--non-numeric">Détails</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="offre in offres">
+                        <td class="mdl-data-table__cell--non-numeric">{{offre.Sujet}}</td>
+                        <td class="mdl-data-table__cell--non-numeric">{{offre.NomSociete}}</td>
+                        <td class="mdl-data-table__cell--non-numeric">{{offre.Type}}</td>
+                        <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" ng-click="offreDetail(offre.OffreID)">
+                                <i class="material-icons">more_horiz</i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="padding: 16px;" class="mdl-card__actions mdl-card--border">
+            Nombre d'offres enregistrés : {{offres.length}}
         </div>
     </div>
 </div>

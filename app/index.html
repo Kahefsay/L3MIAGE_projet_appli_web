@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/sidenavbar.css">
-    <link rel="stylesheet" href="assets/css/inscription-login.css">
+    <link rel="stylesheet" href="assets/css/formulaire.css">
     <link rel="stylesheet" href="assets/css/table.css">
     <link rel="stylesheet" href="assets/css/tab.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -38,7 +38,7 @@
 
                     <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect popover" for="user-plus" ng-if="estConnecte" mdl-upgrade>
                         <li class="mdl-menu__item">
-                            <a style="text-decoration: none; color: black;" href="#!administration">Administration</a>
+                            <a style="text-decoration: none; color: black;" href="#!administration/utilisateurs">Administration</a>
                         </li>
                         <li class="mdl-menu__item" ng-click="deconnexion($location)">
                             Déconnexion
@@ -86,6 +86,7 @@
     <!-- SERVICE -->
     <script src="service/utilisateurCourant.service.js"></script>
     <script src="service/utilisateur.service.js"></script>
+    <script src="service/offre.service.js"></script>
 
     <!-- FOOTER -->
     <script src="components/footercustom/footercustom.module.js"></script>
@@ -119,6 +120,14 @@
     <script src="components/offre/offre.module.js"></script>
     <script src="components/offre/offre.component.js"></script>
 
+    <!-- OFFRE ADMINISTRATION -->
+    <script src="components/offreadministration/offreadministration.module.js"></script>
+    <script src="components/offreadministration/offreadministration.component.js"></script>
+
+    
+    <!-- OFFRE DETAIL -->
+    <script src="components/offredetail/offredetail.module.js"></script>
+    <script src="components/offredetail/offredetail.component.js"></script>
 
 </body>
 

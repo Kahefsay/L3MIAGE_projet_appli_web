@@ -70,3 +70,8 @@ a {
 .mdl-list__item .mdl-list__item-primary-content .mdl-list__item-icon {
     margin-right: 10px;
 }
+
+h6 {
+    font-weight: bold;
+    margin: 10px 0;
+}

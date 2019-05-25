@@ -1,0 +1,48 @@
+<div class="mdl-grid">
+    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+            <h4 class="mdl-cell mdl-cell--12-col">Détail de l'offre</h4>
+            <div class="section__text mdl-cell mdl-cell--12-col">
+                <h6>Sujet:</h6>
+                <br> {{offre.Sujet}}
+                <br>
+                <br>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--12-col">
+                <h6>Type:</h6>
+                <br> {{offre.Type}}
+                <br>
+                <br>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--12-col">
+                <h6>Nom société:</h6>
+                <br> {{offre.NomSociete}}
+                <br>
+                <br>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--12-col">
+                <h6>Adresse société:</h6>
+                <br> {{offre.AdresseSociete}}
+                <br>
+                <br>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--12-col">
+                <h6>Adresse électronique du contact:</h6>
+                <br> {{offre.AdresseElectroniqueContact}}
+                <br>
+                <br>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--12-col">
+                <h6>Téléphone du contact:</h6>
+                <br> {{offre.TelephoneContact}}
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="mdl-card__menu">
+            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" mdl-upgrade ng-click="retourOffre()">
+                <i class="material-icons">arrow_back</i>
+            </button>
+        </div>
+    </div>
+</div>

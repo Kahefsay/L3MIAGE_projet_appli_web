@@ -6,6 +6,8 @@ angular.module('utilisateurCourantService', []).
         this.estConnecte = function ($http) {
             var token = localStorage.getItem('currentUser');
 
+            user = null;
+
             if (token != null) {
                 var payload = JSON.parse(atob(token.split('.')[1]));
             } else {

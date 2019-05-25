@@ -10,8 +10,11 @@ var app = angular.module('MiageToulouse', [
     'inscription',
     'administration',
     'offre',
+    'offredetail',
+    'offreadministration',
     'utilisateurCourantService',
-    'utilisateurService'
+    'utilisateurService',
+    'offreService'
 ]);
 
 app.run(['$rootScope', '$location',
@@ -28,7 +31,7 @@ app.run(['$rootScope', '$location',
     }
 ]);
 
-app.controller('mainCtrl', function ($scope, $http, $location, $route, $utilisateurCourant) {
+app.controller('mainCtrl', function ($scope, $http, $location, $utilisateurCourant) {
 
     if ($scope.user == null) {
         $utilisateurCourant.estConnecte($http)
@@ -44,6 +47,7 @@ app.controller('mainCtrl', function ($scope, $http, $location, $route, $utilisat
         localStorage.removeItem('currentUser');
         $scope.user = null;
         $scope.estConnecte = false;
+        $utilisateurCourant.estConnecte($http);
         $location.path('/accueil');
     }
 });
