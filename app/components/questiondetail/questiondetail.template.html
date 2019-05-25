@@ -1,0 +1,30 @@
+<div class="mdl-grid">
+    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+            <h4 class="mdl-cell mdl-cell--12-col">Détail de la question</h4>
+            <div class="section__text mdl-cell mdl-cell--12-col">
+                <h6>Horodatage:</h6>
+                <br> {{question.Horodatage | date : 'short'}}
+                <br>
+                <br>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--12-col">
+                <h6>Contenu:</h6>
+                <br> {{question.Contenu}}
+                <br>
+                <br>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--12-col">
+                <h6>Réponse:</h6>
+                <br> {{question.Reponse}}
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="mdl-card__menu">
+            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" mdl-upgrade ng-click="retourQuestion()">
+                <i class="material-icons">arrow_back</i>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="mdl-tabs" mdl-upgrade>
+    <div class="mdl-tabs__tab-bar">
+        <a href="#!question" class="mdl-tabs__tab is-active">Mes questions</a>
+        <a href="#!poserquestion" class="mdl-tabs__tab">Poser une question</a>
+    </div>
+</div>
+
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Liste de mes questions</h2>
+        </div>
+        <div class="mdl-card__table">
+            <table class="mdl-data-table mdl-js-data-table">
+                <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Horodatage</th>
+                        <th class="mdl-data-table__cell--non-numeric">Contenu</th>
+                        <th class="mdl-data-table__cell--non-numeric">Réponse</th>
+                        <th class="mdl-data-table__cell--non-numeric">Détail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="question in questions">
+                        <td class="mdl-data-table__cell--non-numeric">{{question.Horodatage | date : 'short'}}</td>
+                        <td class="mdl-data-table__cell--non-numeric">{{question.Contenu}}</td>
+                        <td ng-if="question.Reponse == ''" class="mdl-data-table__cell--non-numeric">
+                            <i class="material-icons">clear</i>
+                        </td>
+                        <td ng-if="question.Reponse != ''" class="mdl-data-table__cell--non-numeric">
+                            <i class="material-icons">done</i>
+                        </td>
+                        <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" ng-click="questionDetail(question.QuestionID)">
+                                <i class="material-icons">more_horiz</i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="padding: 16px;" class="mdl-card__actions mdl-card--border">
+            Nombre de questions enregistrés : {{questions.length}}
+        </div>
+    </div>
+</div>

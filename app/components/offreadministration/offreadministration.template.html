@@ -2,6 +2,7 @@
     <div class="mdl-tabs__tab-bar">
         <a href="#!administration/utilisateurs" class="mdl-tabs__tab">Utilisateurs</a>
         <a href="#!administration/offre" class="mdl-tabs__tab is-active">Offre de stage/alternance</a>
+        <a href="#!administration/question" class="mdl-tabs__tab">Questions</a>
     </div>
 </div>
 
@@ -16,7 +17,7 @@
             <form name="creationOffre" ng-submit="submitForm(creationOffre.$valid)" novalidate ng-show="!creation">
 
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" mdl-upgrade>
-                    <select ng-model="offre.Type" name="Type" class="mdl-textfield__input" required> 
+                    <select ng-model="offre.Type" name="Type" class="mdl-textfield__input" required>
                         <option value="Stage">Stage</option>
                         <option value="Alternance">Alternance</option>
                     </select>
@@ -78,9 +79,10 @@
 
             <div ng-show="creation">
                 <p class="mdl-color-text--green-A700">Création de l'offre réussie</p>
-                <a style="text-decoration: none; " href="#!connexion">Se connecter</a>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect" ng-click="nouvelleOffre()">
+                    Voulez-vous saisir une nouvelle offre ?
+                </button>
             </div>
         </div>
     </div>
-</div>
 </div>

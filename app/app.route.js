@@ -62,6 +62,56 @@ angular.
                         }
                     }
                 }).
+                when('/question', {
+                    template: "<utilisateurquestion></utilisateurquestion>",
+                    resolve: {
+                        currentAuth: function ($utilisateurCourant, $q) {
+                            if ($utilisateurCourant.getUser() == null) {
+                                return $q.reject('AUTH_REQUIRED');
+                            }
+                        }
+                    }
+                }).
+                when('/poserquestion', {
+                    template: "<poserquestion></poserquestion>",
+                    resolve: {
+                        currentAuth: function ($utilisateurCourant, $q) {
+                            if ($utilisateurCourant.getUser() == null) {
+                                return $q.reject('AUTH_REQUIRED');
+                            }
+                        }
+                    }
+                }).
+                when('/question/:questionID', {
+                    template: "<questiondetail></questiondetail>",
+                    resolve: {
+                        currentAuth: function ($utilisateurCourant, $q) {
+                            if ($utilisateurCourant.getUser() == null) {
+                                return $q.reject('AUTH_REQUIRED');
+                            }
+                        }
+                    }
+                }).
+                when('/administration/question', {
+                    template: '<administrationquestion></administrationquestion>',
+                    resolve: {
+                        currentAuth: function ($utilisateurCourant, $q) {
+                            if ($utilisateurCourant.getUser().Role != 'COLLABORATEUR') {
+                                return $q.reject('DROIT_REQUIRED');
+                            }
+                        }
+                    }
+                }).
+                when('/repondrequestion/:questionID', {
+                    template: "<repondrequestion></repondrequestion>",
+                    resolve: {
+                        currentAuth: function ($utilisateurCourant, $q) {
+                            if ($utilisateurCourant.getUser().Role != 'COLLABORATEUR') {
+                                return $q.reject('DROIT_REQUIRED');
+                            }
+                        }
+                    }
+                }).
                 otherwise({
                     redirectTo: '/accueil'
                 });

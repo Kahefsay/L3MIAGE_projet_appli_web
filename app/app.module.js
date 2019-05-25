@@ -12,9 +12,15 @@ var app = angular.module('MiageToulouse', [
     'offre',
     'offredetail',
     'offreadministration',
+    'utilisateurquestion',
+    'poserquestion',
+    'questiondetail',
+    'repondrequestion',
+    'administrationquestion',
     'utilisateurCourantService',
     'utilisateurService',
-    'offreService'
+    'offreService',
+    'questionService'
 ]);
 
 app.run(['$rootScope', '$location',

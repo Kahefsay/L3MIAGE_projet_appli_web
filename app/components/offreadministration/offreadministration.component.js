@@ -22,5 +22,13 @@ angular.
                 }
             }
 
+            $scope.nouvelleOffre = function () {
+                $scope.creation = false;
+
+                $scope.offre = {
+                    Type: 'Stage'
+                }
+            }
+
         }
     });

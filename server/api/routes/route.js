@@ -5,6 +5,7 @@ var router = express.Router();
 var ctrlAuth = require('../controllers/authentification');
 var ctrlUser = require('../controllers/user')
 var ctrlOffre = require('../controllers/offre');
+var ctrlQuestion = require('../controllers/question');
 
 // Authentification
 router.post('/register', ctrlAuth.register);
@@ -15,5 +16,8 @@ router.use('/user', ctrlUser);
 
 // Offre
 router.use('/offre', ctrlOffre);
+
+// Question
+router.use('/question', ctrlQuestion);
 
 module.exports = router;

@@ -1,0 +1,55 @@
+<div class="container" style="padding-top: 20px;">
+    <div class="mdl-card mdl-shadow--8dp offre">
+        <div class="mdl-card__title">
+            <img class="sidenavbar-img-logo" src="../../assets/img/logo.png">
+            <h2 class="mdl-card__title-text">Question</h2>
+            <h3 class="mdl-card__title-text">Répondre à une question</h3>
+        </div>
+        <div class="mdl-card__supporting-text">
+            <form name="repondreQuestion" ng-submit="submitForm(repondreQuestion.$valid)" novalidate ng-show="!creation">
+
+                <div class="section__text mdl-cell mdl-cell--12-col">
+                    <h6>Horodatage:</h6>
+                    <br> {{question.Horodatage | date : 'short'}}
+                    <br>
+                    <br>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--12-col">
+                    <h6>Contenu:</h6>
+                    <br> {{question.Contenu}}
+                    <br>
+                    <br>
+                </div>
+
+                <div ng-if="aRepondu" class="section__text mdl-cell mdl-cell--12-col">
+                    <h6>Réponse:</h6>
+                    <br> {{question.Reponse}}
+                    <br>
+                    <br>
+                </div>
+
+                <div ng-if="!aRepondu" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" mdl-upgrade>
+                    <textarea class="mdl-textfield__input" type="text" name="Reponse" rows="3" ng-model="question.Reponse" maxlength="1024" required></textarea>
+                    <label class="mdl-textfield__label" for="Reponse">Réponse:</label>
+                </div>
+
+                <div ng-if="!aRepondu" class="login-button">
+                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect" type="submit" mdl-upgrade>
+                        Valider
+                    </button>
+                    <p class="mdl-color-text--red-A700" style="margin: 10 0 0 0;">{{erreur}}</p>
+                </div>
+            </form>
+
+            <div ng-show="creation">
+                <p class="mdl-color-text--green-A700">Réponse enregistré</p>
+            </div>
+        </div>
+
+        <div class="mdl-card__menu">
+            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" mdl-upgrade ng-click="retourQuestion()">
+                <i class="material-icons">arrow_back</i>
+            </button>
+        </div>
+    </div>
+</div>

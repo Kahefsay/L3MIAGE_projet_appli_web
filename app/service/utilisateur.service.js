@@ -12,7 +12,6 @@ angular.module('utilisateurService', []).
         };
 
         this.updateRoleUser = function ($http, user) {
-            console.log(user);
             return $http.post('http://localhost:3000/api/user/update/role', user, {
                 headers: {
                     'Content-Type': 'application/json',
