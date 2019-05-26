@@ -25,5 +25,19 @@
             "PART1": "Les salaires d’embauche des diplômés de Master, sont supérieurs à 30k€ pour plus de 90% d’entre eux. Les taux d’insertion sont proches des 100% dans un délai de 3 mois après l’obtention du diplôme.<br><br>",
             "PART2": "Depuis 2009 :<br><ul class=\"mdl-list\"><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>2 à 3 diplômés par an se lancent dans la création d’entreprises</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>6 diplômés ont intégré l’école doctorale durant cette période</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Les délais d’insertion très courts sont directement liés à l’activité en Région Occitanie qui reste le lieu d’insertion privilégiéde nos diplômés</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>De nouvelles tendances sont apparues : première expérience à l’étranger (VIE...), année de césure de découverte à l‘étranger(Canada, Australie, Nouvelle-Zélande)</span></li></ul>"
         }
+    },
+    "FORMATION": {
+        "BLOC1": {
+            "TITRE": "Diplômes délivrés",
+            "PART1": "<ul class=\"mdl-list\"><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Licence MIASHS parcours MIAGE</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Master MIAGE IDP - Ingénierie des Données et Protection</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Master MIAGE ITN - Ingénierie de la Transformation Numérique</span></li></ul>"
+        },
+        "BLOC2": {
+            "TITRE": "Modalité de formation",
+            "PART1": "<ul class=\"mdl-list\"><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>En formation initiale</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>En alternance : apprentissage, contrat de professionnalisation, période de professionnalisation</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>En cours du soir</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>À distance (e-miage)</span></li></ul>"
+        },
+        "BLOC3": {
+            "TITRE": "Contacts",
+            "PART1": "Université Paul Sabatier Toulouse III<br> Secrétariat MIAGE<br> Bâtiment U3 porte 110 – 118 route de Narbonne<br> 31062 – Toulouse Cédex<br> Tél : 05.61.55.67.68<br> En faisant parvenir un mail au <a href=\"mailto:contact@toulouse.miage.fr?subject=Demande%20dossier%20alternance\">Secrétariat de la MIAGE Toulouse</a>"
+        }
     }
 }

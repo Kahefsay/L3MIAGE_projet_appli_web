@@ -25,5 +25,19 @@
             "PART1": "The hiring salaries of Master graduates are over €30k for more than 90% of them. Integration rates are close to 100% within 3 months after graduation. <br><br>",
             "PART2": "Since 2009 :<br><ul class=\"mdl-list\"><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>2 to 3 graduates per year start up companies</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>6 graduates entered the doctoral school during this period</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>The very short integration periods are directly linked to the activity in the Occitan Region, which remains the preferred place for our graduates to integrate.</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>New trends have emerged: first experience abroad (VIE...), year of break of discovery abroad (Canada, Australia, New Zealand)</span></li></ul>"
         }
+    },
+    "FORMATION": {
+        "BLOC1": {
+            "TITRE": "Diplomas awarded",
+            "PART1": "<ul class=\"mdl-list\"><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Licence MIASHS parcours MIAGE</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Master MIAGE IDP - Ingénierie des Données et Protection</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Master MIAGE ITN - Ingénierie de la Transformation Numérique</span></li></ul>"
+        },
+        "BLOC2": {
+            "TITRE": "Training modalities",
+            "PART1": "<ul class=\"mdl-list\"><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>In initial training</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Alternating: apprenticeship, professionalization contract, professionalization period</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>In the evening class</span></li><li class=\"mdl-list__item\"><span class=\"mdl-list__item-primary-content\"><i class=\"material-icons mdl-list__item-icon\">chevron_right</i>Remotely (e-miage)</span></li></ul>"
+        },
+        "BLOC3": {
+            "TITRE": "Contacts",
+            "PART1": "Université Paul Sabatier Toulouse III<br> Secrétariat MIAGE<br> Bâtiment U3 porte 110 – 118 route de Narbonne<br> 31062 – Toulouse Cédex<br> Tél : 05.61.55.67.68<br> By sending an email to <a href=\"mailto:contact@toulouse.miage.fr?subject=Demande%20dossier%20alternance\">Secretariat of the MIAGE Toulouse</a>"
+        }
     }
 }
